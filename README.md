@@ -1,38 +1,27 @@
-## SQLite Lab
+# IDS Mini Project 5: CRUD Operations with SQLite
 
-### Lab:
+#### By Daniel Medina
 
-* Use an AI Assistant, but use a different one then you used from a previous lab (Anthropic's Claud, Bard, Copilot, CodeWhisperer, Colab AI, etc)
-* ETL-Query:  [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query
-For the ETL-Query lab:
-* [E] Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well.
+## Project Description
+In this project, I create a SQLite databse using a HateCrimes CSV file obtained from https://github.com/emorisse/FBI-Hate-Crime-Statistics/blob/master/2013/table13.csv.
+
+I perform the following tasks:
+* [E] Extract a dataset from a URL.
 * [T] Transform the data by cleaning, filtering, enriching, etc to get it ready for analysis.
 * [L] Load the transformed data into a SQLite database table using Python's sqlite3 module.
 * [Q] Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
 
-#### Tasks:
+For the query [Q] portion, I perform the following queries:
+* [C] Create a new row in the dataset for Durham, North Carolaina
+* [R] Read the last five rows of the dataset
+* [U] Update the population for the Durham, North Carolina created record 
+* [D] Delete the Durham, North Carolina created record
 
-* Fork this project and get it to run
-* Make the query more useful and not a giant mess that prints to screen
-* Convert the main.py into a command-line tool that lets you run each step independantly
-* Fork this project and do the same thing for a new dataset you choose
-* Make sure your project passes lint/tests and has a built badge
-* Include an architectural diagram showing how the project works
+In addition, I made main.py a command line tool using Python Fire. The tool can run the following commands:
+* [r] Read the top 5 rows
+* [c] Create a new record
+* [u] Update the newly created record
+* [d] Delete the newly created record
 
-#### Reflection Questions
-
-* What challenges did you face when extracting, transforming, and loading the data? How did you overcome them?
-* What insights or new knowledge did you gain from querying the SQLite database?
-* How can SQLite and SQL help make data analysis more efficient? What are the limitations?
-* What AI assistant did you use and how did it compare to others you've tried? What are its strengths and weaknesses?
-* If you could enhance this lab, what would you add or change? What other data would be interesting to load and query?
-
-##### Challenge Exercises
-
-* Add more transformations to the data before loading it into SQLite. Ideas: join with another dataset, aggregate by categories, normalize columns.
-* Write a query to find correlated fields in the data. Print the query results nicely formatted.
-* Create a second table in the SQLite database and write a join query with the two tables.
-* Build a simple Flask web app that runs queries on demand and displays results.
-* Containerize the application using Docker so the database and queries can be portable
-
+In the test_main.py file, I ensure that my script can succesfully create and delete a record.
 
