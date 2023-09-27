@@ -1,6 +1,7 @@
 # IDS Mini Project 5: CRUD Operations with SQLite
 
 #### By Daniel Medina
+![ccid workflow](https://github.com/medinardaniel/ids706-miniproj-5/actions/workflows/ciccd.yml/badge.svg)
 
 ## Project Description
 In this project, I create a SQLite databse using a HateCrimes CSV file obtained from https://github.com/emorisse/FBI-Hate-Crime-Statistics/blob/master/2013/table13.csv.
